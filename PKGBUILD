@@ -30,8 +30,8 @@ package() {
   install -d "${pkgdir}/usr/share/licenses/${pkgname}"
 
   install -d "${pkgdir}/etc/udev/rules.d"
-  install -d "${pkgdir}/usr/share/pulseaudio/alsa-mixer/profile-sets"
-  install -d "${pkgdir}/usr/share/pulseaudio/alsa-mixer/paths"
+  install -d "${pkgdir}/usr/share/alsa-card-profile/mixer/profile-sets/
+  install -d "${pkgdir}/usr/share/alsa-card-profile/mixer/paths
 
   install -m644 "LICENSE" "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
 

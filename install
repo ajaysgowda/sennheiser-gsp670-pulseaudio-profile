@@ -1,9 +1,11 @@
 #!/bin/bash
 
 prefix=$([ "$1" == "" ] && echo "/" || echo "$1")
+location=usr/share/pulseaudio/alsa-mixer/
 
 cp 91-pulseaudio-sennheiser-gsp670.rules ${prefix}etc/udev/rules.d/
-cp sennheiser-gsp670-usb-audio.conf ${prefix}usr/share/alsa-card-profile/mixer/profile-sets/
-cp sennheiser-gsp670-output-main.conf ${prefix}usr/share/alsa-card-profile/mixer/paths/
-cp sennheiser-gsp670-output-comm.conf ${prefix}usr/share/alsa-card-profile/mixer/paths/
-cp sennheiser-gsp670-input-comm.conf ${prefix}usr/share/alsa-card-profile/mixer/paths/
+cp sennheiser-gsp670-usb-audio.conf ${prefix}${location}profile-sets/
+cp sennheiser-gsp670-output-main.conf ${prefix}${location}paths/
+cp sennheiser-gsp670-output-comm.conf ${prefix}${location}paths/
+cp sennheiser-gsp670-input-comm.conf ${prefix}${location}paths/
+
