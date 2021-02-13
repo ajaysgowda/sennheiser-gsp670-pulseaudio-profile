@@ -12,7 +12,7 @@ clean:
 	rm -f *.pkg.tar.xz
 
 build-deb:
-	mkdir -p build/deb/DEBIAN build/deb/etc/udev/rules.d build/deb/usr/share/alsa-card-profile/mixer/profile-sets build/deb/usr/share/alsa-card-profile/mixer/paths
+	mkdir -p build/deb/DEBIAN build/deb/etc/udev/rules.d build/deb/usr/share/pulseaudio/alsa-mixer/profile-sets build/deb/usr/share/pulseaudio/alsa-mixer/paths
 	cp control build/deb/DEBIAN/
 	./install build/deb/
 	dpkg-deb --build build/deb build/pulseaudio-sennheiser-gsp670_${VERSION}_all.deb

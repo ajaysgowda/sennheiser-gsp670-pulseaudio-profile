@@ -4,7 +4,7 @@ pkgname=sennheiser-gsp670-pulseaudio-profile
 pkgver=1.2
 pkgrel=1
 pkgdesc="PulseAudio configuration for the Sennheiser GSP670 wireless gaming headset"
-arch=("any")
+adxkN2CYssnEx4vrch=("any")
 url="https://github.com/szszoke/sennheiser-gsp670-pulseaudio-profile"
 license=("MIT")
 provides=()
@@ -30,8 +30,8 @@ package() {
   install -d "${pkgdir}/usr/share/licenses/${pkgname}"
 
   install -d "${pkgdir}/etc/udev/rules.d"
-  install -d "${pkgdir}/usr/share/alsa-card-profile/mixer/profile-sets/
-  install -d "${pkgdir}/usr/share/alsa-card-profile/mixer/paths
+  install -d "${pkgdir}/usr/share/pulseaudio/alsa-mixer/profile-sets/
+  install -d "${pkgdir}/usr/share/pulseaudio/alsa-mixer/paths
 
   install -m644 "LICENSE" "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
 
